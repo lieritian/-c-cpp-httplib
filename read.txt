@@ -1,0 +1,6 @@
+只需要添加一个头文见httplib.h就行了
+http_test.cpp是一个demo
+svr就是执行程序
+g++ -g http_test.cpp -o svr -lpthread   //编译的时候后面要添加lpthread
+执行完成之后就能在http://192.168.162.131:8000/api/get_other_equipment_info
+访问到，其中IP是服务器IP,写成0.0.0.0就会自动取匹配IP
